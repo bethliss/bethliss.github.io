@@ -24,10 +24,10 @@
 
    div.menu {
      background-color: grey;
-     width: 1300px;
      height: 110px;
      position: fixed;
      opacity: 0.9;
+     width: 100%;
    }
 
 
@@ -54,21 +54,17 @@
 
 
    div.middle {
-     width: 1300px;
      height: 400px;
      display: inline-flex;
    }
     div.middle > div {
-      /*width: 50%;*/
       display: inline-block;
     }
    div.welcome {
      padding-left: 20px;
      width: 60%;
    }
-   div.gallery {
-     width: 40%;
-   }
+
 
 
    h2 {
@@ -104,12 +100,7 @@
      display: inline-block;
    }
 
-   div.gallery {
-     width: 40%;
-     /*background-repeat: no-repeat;
-     background-size: cover;
-     background-image: url("img/vaza.jpeg");*/
-   }
+
    div.vaza {
      background-repeat: no-repeat;
      background-size: cover;
@@ -126,7 +117,6 @@
      background-size: cover;
      background-image: url("img/lestnica.jpg");
      height: 500px;
-     width: 1300px;
      opacity: 0.8;
    }
 
@@ -150,14 +140,14 @@
    }
 
    div.properties {
-     width: 1300px;
      height: 250px;
+
    }
 
    div.properties-menu {
-     width: 1300px;
      height: 200px;
      display: inline-block;
+
    }
 
    div.properties-menu > p {
@@ -170,8 +160,6 @@
      padding-top: 70px;
      color: black;
      font-family: Courier New, monospace;
-
-
    }
    p.view {
      font-size: 20px;
@@ -184,7 +172,7 @@
      padding-top: 70px;
      display: inline-block;
      text-align: right;
-     padding-left: 150px;
+     padding-left: 130px;
      color: gray;
 
    }
@@ -197,7 +185,6 @@
 
    div.gallery1 {
      height: 650px;
-     width: 1300px;
      padding-left: 40px;
      display: inline-flex;
    }
@@ -213,7 +200,7 @@
      background-image: url("img/newyork.jpeg");
    }
 
-   h4 {
+   p.cozy {
      padding-top: 25px;
      font-size: 25px;
    }
@@ -235,7 +222,7 @@
      background-size: cover;
      background-image: url("img/Saratoga.jpg");
    }
-   h5 {
+   p.home {
      font-size: 25px;
      padding-top: 20px;
    }
@@ -256,7 +243,7 @@
      background-size: cover;
      background-image: url("img/orlando.jpg");
    }
-   h6 {
+   p.sweet-home {
      padding-top: 20px;
      font-size: 25px;
    }
@@ -277,7 +264,8 @@
      background-size: cover;
      background-image: url("img/stul.jpg");
    }
-   h7 {
+   p.open-home
+   {
      padding-top: 20px;
      font-size: 25px;
    }
@@ -323,16 +311,14 @@
     background-color: initial
   }
   div.news {
-    width: 1300px;
     height: 900px;
   }
   div.news-header{
-    width: 1280px;
     height: 200px;
     padding-top: 60px;
     }
 
-  h8 {
+  h4 {
     font-size: 80px;
     color: black;
     padding-left: 80px;
@@ -347,7 +333,6 @@
   }
   div.gallery2 {
     height: 650px;
-    width: 1280px;
     padding-left: 125px;
     display: inline-flex;
   }
@@ -362,7 +347,7 @@
     background-size: cover;
     background-image: url("img/street.jpg");
   }
-  h9 {
+  h5 {
     padding-top: 20px;
     font-size: 25px;
   }
@@ -383,7 +368,7 @@
     background-size: cover;
     background-image: url("img/taxi.jpg");
   }
-  h10 {
+  h6 {
     padding-top: 20px;
     font-size: 25px;
   }
@@ -400,7 +385,6 @@
   }
   div.footer {
     height: 600px;
-    width: 1280px;
     background-image: url("img/newyork.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -408,7 +392,7 @@
     box-shadow:0 0 0 1280px rgba(0, 0, 0, 0.33) inset;
 
   }
-  h11 {
+  p.sweet {
     color: beige;
     font-size: 40px;
     margin-top: 100px;
@@ -417,7 +401,7 @@
   p.rent {
     font-size: 30px;
     color: wheat;
-    margin-top: 340px;
+    margin-top: 200px;
   }
   p.copy {
     font-size: 20px;
@@ -551,8 +535,10 @@
          <div class="gallery1">
            <div class="new">
              <div class="newyork"></div>
-             <h4> Cozy Private Room UWS </h4>
-             <p class="h4">
+             <p class="cozy">
+               Cozy private
+             </p>
+              <p class="h4">
                New York
              </p>
              <p class="newyork">
@@ -562,7 +548,9 @@
            </div>
            <div class="sara">
              <div class="Saratoga"></div>
-             <h5> Beautiful, open home </h5>
+             <p class="home">
+               Beautiful, cozy home!
+             </p>
              <p class="h5">
                Saratoga
              </p>
@@ -573,7 +561,9 @@
            </div>
            <div class="orl">
            <div class="orlando"></div>
-             <h6> Oh so sweet home </h6>
+           <p class="sweet-home">
+             Oh swwet home
+           </p>
              <p class="h6">
                Orlando
              </p>
@@ -584,7 +574,9 @@
          </div>
          <div class="st">
            <div class="stul"></div>
-             <h7> Beautiful, open home </h7>
+           <p class="open-home">
+             Beautiful, open home!
+           </p>
              <p class="h7">
                Stul
              </p>
@@ -608,7 +600,7 @@
 
      <div class="news">
        <div class="news-header">
-         <h8> NEWS </h8>
+         <h4> NEWS </h4>
          <p class="news">
            Blablabla
          </p>
@@ -617,7 +609,7 @@
 
        <div class="pl">
          <div class="plan"></div>
-         <h4> Plan to Create </h4>
+         <h5> Plan to Create </h5>
          <p class="h9">
            11 / 11 / 2015
          </p>
@@ -628,7 +620,7 @@
        </div>
        <div class="sub">
          <div class="subway"></div>
-         <h4> Cozy Private Room UWS </h4>
+         <h6> Cozy Private Room UWS </h6>
          <p class="h10">
            04 / 09 / 2015
          </p>
@@ -643,12 +635,7 @@
      <iframe frameborder="0" height="500" width="1270" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?oe=utf-8&client=firefox-a&ie=UTF8&hl=ru&hnear=&t=m&source=embed&spn=0.016382,0.042143&z=14&iwloc=A&output=embed"></iframe>
    </div>
    <div class="footer">
-     <!-- <ul class="linkk">
-       <li id=”twitter” class="social"></li>
-       <li id=”facebook” class="social"></li>
-       <li id=”google” class="social"></li>
-       <li id=”google” class="social"></li>
-     </ul> -->
+
      <div class="share">
             <a class="social social-pn" href=""></a>
             <a class="social social-fb" href=""></a>
@@ -656,7 +643,9 @@
             <a class="social social-you" href=""></a>
 
         </div>
-     <h11> Sweet house </h11>
+        <p class="sweet">
+          Sweet home
+        </p>
      <p class="rent">
        APARTMENTS FOR RENT
      </p>
