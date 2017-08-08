@@ -8,10 +8,12 @@
    * {
     margin: 0;
     padding: 0;
+    overflow: scroll;
   }
     div.page {
      margin: 0 auto;
      background-color: white;
+     overflow: scroll;
    }
 
    div.header {
@@ -55,7 +57,8 @@
 
    div.middle {
      height: 400px;
-     display: inline-flex;
+     display: flex;
+     justify-content: center;
    }
     div.middle > div {
       display: inline-block;
@@ -64,8 +67,6 @@
      padding-left: 20px;
      width: 60%;
    }
-
-
 
    h2 {
      font-size: 70px;
@@ -118,29 +119,40 @@
      background-image: url("img/lestnica.jpg");
      height: 500px;
      opacity: 0.8;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   div.p {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
    }
 
    div.quote > p {
-     display: inline-block;
+     display: flex;
      text-align: center;
      color: black;
+     align-items: center;
+     justify-content: center;
+
    }
 
    p.quote-text {
      font-size: 20px;
-     padding-top: 18%;
      width: 700px;
-     padding-left: 21%;
-
    }
 
    p.name {
      font-size: 30px;
-     padding-left: 40%;
    }
 
    div.properties {
      height: 250px;
+     text-align: center;
+     vertical-align: top;
+     justify-content: center;
 
    }
 
@@ -186,7 +198,9 @@
    div.gallery1 {
      height: 650px;
      padding-left: 40px;
-     display: inline-flex;
+     display: flex;
+     align-items: center;
+     justify-content: center;
    }
 
    div.new div.newyork {
@@ -283,8 +297,13 @@
      background-image: url("img/ezh.jpg");
      height: 700px;
      opacity: 0.8;
+     display: flex;
+     justify-content: center;
    }
-
+   form {
+     margin: auto;
+     width: 45%;
+    }
     input[type=button] {
     background-color: #4CAF50;
     border: none;
@@ -293,7 +312,6 @@
     cursor: pointer;
     font-size: 20px;
     width: 45%;
-    margin-top: 1%;
     margin-left: 30%;
     }
     textarea {
@@ -307,15 +325,17 @@
     font-size: 16px;
     resize: none;
     margin-left: 30%;
-    margin-top: 22%;
     background-color: initial
   }
   div.news {
-    height: 900px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
   }
   div.news-header{
     height: 200px;
     padding-top: 60px;
+    padding-right: 30px;
     }
 
   h4 {
@@ -333,13 +353,13 @@
   }
   div.gallery2 {
     height: 650px;
-    padding-left: 125px;
     display: inline-flex;
+    align-items: center;
   }
 
   div.pl div.plan {
     height: 400px;
-    width: 550px;
+    width: 450px;
     margin-right: 10px;
   }
   div.plan {
@@ -361,7 +381,7 @@
   }
   div.sub div.subway {
     height: 400px;
-    width: 500px;
+    width: 450px;
   }
   div.subway {
     background-repeat: no-repeat;
@@ -382,6 +402,7 @@
   }
   div.map {
     cursor: pointer;
+    display: flex;
   }
   div.footer {
     height: 600px;
@@ -509,12 +530,16 @@
 
      </div>
      <div class="quote">
-       <p class="quote-text">
-         I will highly recommend your company to all my friends who own rental properties (and there are quite a few). I can't say enough about the service from your company and look forward to dealing with you again in the near future. You're the best.
-       </p>
-       <p class="name">
-         Monica Gordon
-       </p>
+       <div class="p">
+         <p class="quote-text">
+          I will highly recommend your company to all my friends who own rental properties (and there are quite a few). I can't say enough about the service from your company and look forward to dealing with you again in the near future. You're the best.
+         </p>
+         <p class="name">
+           Monica Gordon
+         </p>
+       </div>
+
+
      </div>
      <div class="properties">
          <div class="properties-menu">
@@ -589,11 +614,10 @@
        </div>
        <div class="email">
          <form>
-           <label for="fname"></label>
            <textarea>Email</textarea>
+           <input type="button" value="Subscribe">
 
         </form>
-        <input type="button" value="Subscribe">
        </div>
 
 
@@ -631,7 +655,7 @@
      </div>
    </div>
    <div class="map">
-     <iframe frameborder="0" height="500" width="1270" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?oe=utf-8&client=firefox-a&ie=UTF8&hl=ru&hnear=&t=m&source=embed&spn=0.016382,0.042143&z=14&iwloc=A&output=embed"></iframe>
+     <iframe frameborder="0" height="500" width="100%" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?oe=utf-8&client=firefox-a&ie=UTF8&hl=ru&hnear=&t=m&source=embed&spn=0.016382,0.042143&z=14&iwloc=A&output=embed"></iframe>
    </div>
    <div class="footer">
 
