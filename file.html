@@ -29,10 +29,8 @@
     margin-top: 20px;
   }
   div.advert {
-    display: flex;
-    position: absolute;;
-    width: 550px;
-    left: 180px;
+    width: 1000px;
+    margin: 0 auto;
     padding-top: 30px;
 
   }
@@ -55,6 +53,8 @@
     background-repeat: no-repeat;
     background-image: url("img7/kr.png");
     margin-left: 240px;
+    height: 450px;
+    width: 650px;
   }
   div.white div.notebook {
     height: 350px;
@@ -71,21 +71,22 @@
   h1 {
     color: firebrick;
     font-size: 50px;
-    position: absolute;
     padding-top: 20px;
+    line-height: 2;
+  }
 
+  div.advertise {
+    width: 50%;
   }
   p.advertise {
     font-size: 20px;
-    position: absolute;
-    padding-top: 110px;
     color: gray;
+    line-height: 2,5;
   }
-  p.advertise2 {
-    font-size: 20px;
-    position: absolute;
-    padding-top: 150px;
-    color: gray;
+
+  div.input1 {
+    width: 1000px;
+    margin: 0 auto;
   }
 
   input[type=buttton] {
@@ -96,7 +97,6 @@
    border: 2px solid;
    background-color: white;
    font-size: 15px;
-   margin-top: 230px;
    text-align: center;
   }
 
@@ -125,13 +125,13 @@
 
   }
   div.publisher {
-    width: 550px;
-    padding-left: 700px;
-    position: absolute;
-    display: inline-block;
-    padding-top: 100px;
+    width: 1000px;
+    margin: 0 auto;
   }
-  div.img {
+  div.puble {
+    width: 50%;
+  }
+  div.komp {
     background-image: url("img7/komp.png");
     height: 300px;
     width: 200px;
@@ -155,13 +155,7 @@
     width: 400px;
 
   }
-  p.description2 {
-    font-size: 20px;
-    color: gray;
-    padding-top: 15px;
-    width: 300px;
-    margin-left: 150px;
-  }
+
   input[type=button2] {
    color: orange;
    padding: 10px;
@@ -761,6 +755,7 @@
       text-align: center;
       padding-top: 15px;
     }
+
     body {
       font-family: 'Titillium Web', sans-serif;
 
@@ -780,9 +775,9 @@
           <div class="ipad"></div>
         </div>
 
-          <div class="red">
+          <!-- <div class="red"> -->
             <div class="angle"></div>
-          </div>
+          <!-- </div> -->
           <!-- <div class="white">
             <div class="notebook"></div>
           </div> -->
@@ -790,50 +785,43 @@
 
         </div>
       <div class="advert">
-        <input type="buttton" value="Subscribe">
 
+      <div class="advertise">
+        <h1>Are you an Advertiser?</h1>
 
-      <h1>Are you an Advertiser?</h1>
-      <p class="advertise">
+        <p class="advertise">
+          Stop losing money on useless traffic that
+          doesn't convert!
+          Pay only per leads, installs or sales.
+          With our expertise we guarantee your results.
+        </p>
 
-        Stop losing money on useless traffic that
-        doesn't convert!
-
-      </p>
-      <p class="advertise2">
-
-        Pay only per leads, installs or sales.
-        With our expertise we guarantee your results.
-
-      </p>
-
+      </div>
+      <input type="buttton" value="Subscribe">
     </div>
-
   </div>
     <div class="middle">
-
-
         <div class="publisher">
-          <h2>Are you a Publisher?</h2>
-          <p class="description">
-            No more low CPM rates, no more irritating
-            Popunders, no more Google issues!
-          </p>
-
-          <p class="description2">
-            It's time to monetize ypur traffic with
-            high quality targered ads.
-          </p>
+          <div class="puble">
+            <h2>Are you a Publisher?</h2>
+            <p class="description">
+              No more low CPM rates, no more irritating
+              Popunders, no more Google issues!
+              It's time to monetize ypur traffic with
+              high quality targered ads.
+            </p>
+          </div>
           <input type="button2" value="Monetize">
         </div>
 
-          <div class="ugol">
-            <div class="img"></div>
-            <div class="dnev">
-
-            </div>
+        <div class="komp">
 
         </div>
+          <div class="ugol">
+          </div>
+            <div class="img"></div>
+            <div class="dnev"></div>
+
       </div>
 
     <div class="formats">
