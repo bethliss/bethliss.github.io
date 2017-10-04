@@ -106,6 +106,7 @@
     background-size: cover;
     background-color: lightgrey;
   }
+
   div.ugol {
     background-image: url("img7/bely.png");
     height: 500px;
@@ -124,13 +125,6 @@
 
 
   }
-  div.publisher {
-    width: 1000px;
-    margin: 0 auto;
-  }
-  div.puble {
-    width: 50%;
-  }
   div.komp {
     background-image: url("img7/komp.png");
     height: 300px;
@@ -140,6 +134,14 @@
     margin-top: 20px;
     display: inline-block;
     position: relative;
+  }
+  div.publisher {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: right;
+  }
+  div.puble {
+    width: 50%;
   }
 
 
@@ -151,8 +153,6 @@
     font-size: 20px;
     color: grey;
     padding-top: 30px;
-    margin-left: 100px;
-    width: 400px;
 
   }
 
@@ -194,24 +194,15 @@
       font-size: 20px;
       color: grey;
       text-align: center;
-      width: 400px;
-      padding-left: 35%;
       padding-top: 40px;
     }
 
     div.gallery {
-      height: 150px;
-      padding-left: 230px;
-      display: inline-flex;
+      display: flex;
       padding-top: 80px;
-      width: 1090px;
+      justify-content: center;
+      align-content: space-between;
     }
-
-    /*div.dis div.display {
-      height: 50px;
-      width: 80px;
-      margin-left: 58px;
-    }*/
 
     div.display {
       background-repeat: no-repeat;
@@ -234,12 +225,6 @@
       width: 200px;
     }
 
-    /*div.mob div.mobile {
-      height: 50px;
-      width: 80px;
-      margin-left: 100px;
-    }*/
-
     div.mobile {
       background-repeat: no-repeat;
       background-image: url("img7/2_Mobile.svg");
@@ -259,12 +244,6 @@
       text-align: center;
       width: 200px;
     }
-
-    /*div.vid div.video {
-      height: 50px;
-      width: 80px;
-      margin-left: 100px;
-    }*/
 
     div.video {
       background-repeat: no-repeat;
@@ -286,12 +265,7 @@
       text-align: center;
       width: 200px;
     }
-/*
-    div.site div.background {
-      height: 50px;
-      width: 80px;
-      margin-left: 100px;
-    }*/
+
 
     div.background {
       background-repeat: no-repeat;
@@ -345,7 +319,7 @@
     }
 
     div.agency {
-      height: 530px;
+      height: 550px;
       background-repeat: no-repeat;
       background-size: cover;
       background-color: gainsboro;
@@ -360,34 +334,32 @@
     }
 
     p.advertisers {
-      color: darkgrey;
+      color: #5f5c5c;
       font-size: 23px;
       text-align: center;
       padding-top: 25px;
     }
 
     div.gallery2{
-      height: 200px;
-      width: 1000px;
-      display: inline-flex;
+      justify-content: center;
+      display: flex;
     }
     div.pay div.per {
       height: 50px;
-      width: 80px;
-      margin-left: 280px;
       margin-top: 40px
     }
 
     div.per {
       background-image: url("img7/5_Pay_Per_Action.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.per {
       font-size: 15px;
       color: black;
-      padding-left: 250px;
       padding-top: 20px;
+      text-align: center;
 
     }
 
@@ -396,26 +368,25 @@
       color: grey;
       text-align: center;
       width: 200px;
-      padding-left: 189px;
     }
 
     div.science div.expertise {
       height: 50px;
-      width: 80px;
-      margin-left: 225px;
       margin-top: 40px
     }
 
     div.expertise {
       background-image: url("img7/6_AdScience_Agency_Expertise.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.science {
       font-size: 15px;
       color: black;
-      padding-left: 155px;
       padding-top: 20px;
+      text-align: center;
+
 
     }
 
@@ -424,26 +395,25 @@
       color: grey;
       text-align: center;
       width: 300px;
-      padding-left: 93px;
     }
 
     div.targeted div.retargeted {
       height: 50px;
-      width: 80px;
-      margin-left: 188px;
       margin-top: 40px
     }
 
     div.retargeted {
       background-image: url("img7/7_Targeted_Ads.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.targeted {
       font-size: 15px;
       color: black;
-      padding-left: 129px;
       padding-top: 20px;
+      text-align: center;
+
 
     }
 
@@ -451,68 +421,59 @@
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 200px;
-      padding-left: 113px;
     }
 
     div.gallery3 {
-      height: 200px;
-      width: 1000px;
-      display: inline-flex;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
     }
 
     div.personal div.manager {
       height: 50px;
-      width: 80px;
-      margin-left: 420px;
+
     }
 
     div.manager {
       background-image: url("img7/8_Personal_Manager.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.personal {
       font-size: 15px;
       color: black;
-      padding-left: 380px;
       padding-top: 20px;
-
+      text-align: center;
     }
 
     p.manager {
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 200px;
-      padding-left: 332px;
     }
 
     div.high div.quality {
       height: 50px;
-      width: 80px;
-      margin-left: 282px;
     }
 
     div.quality {
       background-image: url("img7/9_High_quality_publishers.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.high {
       font-size: 15px;
       color: black;
-      padding-left: 239px;
       padding-top: 20px;
-
+      text-align: center;
     }
 
     p.quality {
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 200px;
-      padding-left: 209px;
     }
 
     div.for {
@@ -521,36 +482,35 @@
     }
 
     h5 {
-      color: black;
+      color: #5f5c5c;
       font-size: 30px;
       text-align: center;
       padding-top: 40px;
     }
 
     div.gallery4 {
-      height: 200px;
-      width: 1000px;
-      display: inline-flex;
+      display: flex;
+      justify-content: center;
     }
 
 
     div.cpm div.rates {
       height: 50px;
-      width: 80px;
-      margin-left: 245px;
       margin-top: 40px
+
     }
 
     div.rates {
       background-image: url("img7/10_CPM_rates.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.cpm {
       font-size: 15px;
       color: black;
-      padding-left: 250px;
       padding-top: 20px;
+      text-align: center;
 
     }
 
@@ -558,27 +518,24 @@
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 200px;
-      padding-left: 189px;
     }
 
     div.save div.ads {
       height: 50px;
-      width: 80px;
-      margin-left: 218px;
       margin-top: 40px
     }
 
     div.ads {
       background-image: url("img7/11_Save_Ads.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.save {
       font-size: 15px;
       color: black;
-      padding-left: 210px;
       padding-top: 20px;
+      text-align: center;
 
     }
 
@@ -586,27 +543,25 @@
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 300px;
-      padding-left: 93px;
     }
 
     div.ad div.block {
       height: 50px;
-      width: 80px;
-      margin-left: 188px;
       margin-top: 40px
     }
 
     div.block {
       background-image: url("img7/12_AdBlock_Solution.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.ad {
       font-size: 15px;
       color: black;
-      padding-left: 160px;
       padding-top: 20px;
+      text-align: center;
+
 
     }
 
@@ -614,32 +569,32 @@
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 200px;
-      padding-left: 113px;
     }
 
     div.gallery5 {
-      height: 200px;
-      width: 1000px;
-      display: inline-flex;
+      justify-content: center;
+      display: flex;
+      padding-top: 30px;
     }
 
     div.regular div.payments {
       height: 50px;
-      width: 80px;
-      margin-left: 410px;
+      text-align: center;
+
     }
 
     div.payments {
       background-image: url("img7/13_Regular_payments.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.regular {
       font-size: 15px;
       color: black;
-      padding-left: 380px;
       padding-top: 20px;
+      text-align: center;
+
 
     }
 
@@ -647,26 +602,27 @@
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 200px;
-      padding-left: 332px;
+
     }
 
     div.personal2 div.manager2 {
       height: 50px;
-      width: 80px;
-      margin-left: 288px;
+      text-align: center;
+
     }
 
     div.manager2 {
       background-image: url("img7/14_Personal Manager.svg");
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     p.personal2 {
       font-size: 15px;
       color: black;
-      padding-left: 252px;
       padding-top: 20px;
+      text-align: center;
+
 
     }
 
@@ -674,8 +630,7 @@
       font-size: 15px;
       color: grey;
       text-align: center;
-      width: 200px;
-      padding-left: 209px;
+
     }
 
     div.input {
@@ -687,28 +642,30 @@
       color: firebrick;
       font-size: 50px;
       text-align: center;
-      width: 700px;
-      padding-left: 290px;
       padding-top: 30px;
       padding-bottom: 40px;
     }
 
-    div.area {
-      height: 200px;
-      padding-top: 20px;
-      padding-left: 30px;
+    div.email {
+      text-align: center;
     }
-    textarea {
-      width: 35%;
+    form {
+      text-align: center;
+    }
+    input[type=Name] {
       height: 18px;
       padding: 12px 20px;
       font-size: 16px;
       resize: none;
-      margin-left: 30%;
-      margin-top: 1px;
       background-color: initial
     }
-
+    input[type=E-mail] {
+      height: 18px;
+      padding: 12px 20px;
+      font-size: 16px;
+      resize: none;
+      background-color: initial
+    }
 
     input[type=button] {
       background-color: darkred;
@@ -722,12 +679,14 @@
       margin-left: 30%;
     }
 
+    div.bottom {
+      justify-content: center;
+    }
     div.magic {
       background-repeat: no-repeat;
       background-image: url("img7/magic.png");
       height: 300px;
-      margin-left: 360px;
-
+      background-position: center;
     }
 
     div.partners {
@@ -741,8 +700,6 @@
       text-align: center;
       padding-top: 30px;
     }
-
-
 
     div.end {
       height: 50px;
@@ -758,7 +715,6 @@
 
     body {
       font-family: 'Titillium Web', sans-serif;
-
     }
 
 
@@ -769,68 +725,49 @@
 
   <div class="page">
     <div class="header">
-
       <div class="logo">
         <div class="sara">
           <div class="ipad"></div>
         </div>
-
-          <!-- <div class="red"> -->
             <div class="angle"></div>
-          <!-- </div> -->
-          <!-- <div class="white">
-            <div class="notebook"></div>
-          </div> -->
-
-
         </div>
       <div class="advert">
-
       <div class="advertise">
         <h1>Are you an Advertiser?</h1>
-
         <p class="advertise">
           Stop losing money on useless traffic that
           doesn't convert!
           Pay only per leads, installs or sales.
           With our expertise we guarantee your results.
         </p>
-
       </div>
       <input type="buttton" value="Subscribe">
     </div>
   </div>
     <div class="middle">
         <div class="publisher">
-          <div class="puble">
             <h2>Are you a Publisher?</h2>
             <p class="description">
-              No more low CPM rates, no more irritating
-              Popunders, no more Google issues!
-              It's time to monetize ypur traffic with
+              No more low CPM rates, no more irritating <br>
+              Popunders, no more Google issues! <br>
+              It's time to monetize ypur traffic with <br>
               high quality targered ads.
             </p>
-          </div>
           <input type="button2" value="Monetize">
         </div>
-
-        <div class="komp">
-
-        </div>
-          <div class="ugol">
-          </div>
-            <div class="img"></div>
-            <div class="dnev"></div>
-
-      </div>
-
+            <!-- <div class="img"> -->
+              <!-- <div class="komp"></div> -->
+              <!-- <div class="ugol"></div> -->
+              <!-- <div class="dnev"></div> -->
+          <!-- </div> -->
+            </div>
     <div class="formats">
         <div class="circle">  </div>
 
       <div class="words">
         <h3>Advertising Formats</h3>
         <p class="formats">
-          We offer only most popular, result-oriented
+          We offer only most popular, result-oriented<br>
                 and high perfomance ad formats!
         </p>
 
@@ -908,7 +845,7 @@
               Pay Per Action
             </p>
             <p class="results">
-              You will pay only for results
+              You will pay only for results<br>
               you need (lead, install, sale etc.)
             </p>
           </div>
@@ -918,7 +855,7 @@
               AdScience Agency Expertise
             </p>
             <p class="expertise">
-              Take advantage of our experience in E-commerce
+              Take advantage of our experience in E-commerce<br>
               Gaming, Forex & Investments etc.
             </p>
           </div>
@@ -928,7 +865,7 @@
               Targeted Ads & Retargeting
             </p>
             <p class="retargeted">
-              The better the targeting the
+              The better the targeting the<br>
               higher results you achueve.
             </p>
           </div>
@@ -942,7 +879,7 @@
               Personal Manager
             </p>
             <p class="manager">
-              Your PM will help you optimize
+              Your PM will help you optimize<br>
               campaigns to the max.
             </p>
           </div>
@@ -953,7 +890,7 @@
               High quality publishers
             </p>
             <p class="quality">
-              To achieve your goals we work
+              To achieve your goals we work<br>
               only with high quality traffic.
             </p>
           </div>
@@ -969,7 +906,7 @@
               CPM rates
             </p>
             <p class="rates">
-              That are higher than Industry rates
+              That are higher than Industry rates<br>
               due to respectable advertiser.
             </p>
           </div>
@@ -979,7 +916,7 @@
               Save Ads
               </p>
             <p class="ads">
-              No sneaky ads, no irritating popenders,
+              No sneaky ads, no irritating popenders,<br>
               only high quality targeter ads.
             </p>
           </div>
@@ -989,7 +926,7 @@
               AdBlock Solution
             </p>
             <p class="block">
-              Monetize every visitor on your
+              Monetize every visitor on your<br>
               website despite the adblocks.
             </p>
           </div>
@@ -1003,7 +940,7 @@
               Regular payments
             </p>
             <p class="payments">
-              You may always be shure that you'll
+              You may always be shure that you'll<br>
               receive your money on time!
             </p>
           </div>
@@ -1014,7 +951,7 @@
               Personal Manager
             </p>
             <p class="manager2">
-              Instant support will help you gain
+              Instant support will help you gain<br>
               max from your traffic.
             </p>
           </div>
@@ -1022,18 +959,23 @@
       </div>
 
     <div class="input">
-      <h6>Once you try working
-      withAdScience Agency you'll never switch to something else!</h6>
+      <h6>Once you try working<br>
+      with AdScience Agency you'll<br> never switch to something else!</h6>
       <div class="email">
         <div class="area">
         <form>
-          <label for="fname"></label>
-            <textarea>Name</textarea>
-            <textarea>Email </textarea>
+          <p><input type="Name" value="Name">
+          </p>
+          <p><input type="E-mail" value="E-mail"></p>
+            <!-- <input type="button" value="Subscribe"> -->
           </form>
-          <input type="button" value="Subscribe">
           </div>
-          <div class="magic"></div>
+          <div class="bottom">
+            <div class="magic"></div>
+          </div>
+          <p><input type="button" value="Subscribe">
+</p>
+
       </div>
     </div>
 
