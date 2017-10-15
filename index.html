@@ -151,7 +151,8 @@
     background-repeat: no-repeat;
   }
   div.publisher {
-    
+    width: 1000px;
+    margin: 0 auto;
     text-align: right;
   }
   div.puble {
@@ -180,10 +181,12 @@
    text-align: center;
   }
    div.formats {
-     /*height: 800px;*/
-     background-repeat: no-repeat;
-     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
    }
+
+
    h3 {
      font-size: 2.857em;
      color: firebrick;
@@ -338,10 +341,10 @@
     }
 
     div.agency {
-      height: 50%;
       justify-content: center;
       align-items: center;
       background-color: gainsboro;
+      display: flex;
     }
 
     h4 {
@@ -504,10 +507,10 @@
     }
 
     div.for {
-      height: 50%;
       background-color: sandybrown;
       justify-content: center;
       align-items: center;
+      display: flex;
     }
 
     h5 {
@@ -794,23 +797,22 @@
     }
   }
 
+  @media only screen and (min-width: 1000px) {
+.gallery2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+} }
 
-
-
-/*@media only screen and (max-width: 759px){
-.section {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  *padding: 0vh 5vw
-}}*/
-
-/*@media only screen and (max-width: 759px) {
-.formats {
+  @media only screen and (min-width: 1000px) {
+  .formats {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
     height: 100%;
-    background-image: url();
-    margin-bottom: 30px;
-}}*/
+} }
+
+
 
 @media only screen and (max-width: 759px) {
 .input {
@@ -840,7 +842,8 @@
 @media only screen and (min-width: 1000px) {
 .for {
     width: 1000px;
-    /*position: relative;*/
+    position: relative;
+    height: 100%;
     margin: 0 auto;
 } }
 
@@ -874,13 +877,15 @@
     }
   }
 
-  @media only screen and (min-width: 1000px) {
-.agency {
-    width: 1000px;
-    /*position: relative;*/
-    margin: 0 auto;
-} }*/
 
+
+@media only screen and (min-width: 1000px) {
+.agency {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+} }
 
 
   </style>
@@ -931,15 +936,14 @@
           </div>
           <div class="section">
             <div class="formats">
+              <div>
         <!-- <div class="circle">  </div> -->
-
       <div class="words">
         <h3>Advertising Formats</h3>
         <p class="format">
           We offer only most popular, result-oriented<br>
                 and high perfomance ad formats!
         </p>
-
       </div>
       <div class="gallery">
         <div class="item">
@@ -1001,9 +1005,12 @@
     </div>
   </div>
 
+  </div>
+
     <div class="section">
       <div class="container1">
         <div class="agency">
+          <div>
         <h4> Why Choose AdScience Agency? </h4>
         <p class="advertisers">
           For Advertisers:
@@ -1070,9 +1077,12 @@
       </div>
     </div>
 
+    </div>
+
       <div class="container">
 
       <div class="for">
+        <div>
         <h5>For Publisher:</h5>
         <div class="gallery4">
           <div class="cpm">
@@ -1132,6 +1142,8 @@
           </div>
         </div>
       </div>
+    </div>
+
       </div>
     </div>
 
