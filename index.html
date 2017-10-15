@@ -186,6 +186,10 @@
      align-items: center;
    }
 
+   div.container2 {
+     height: 50%;
+   }
+
 
    h3 {
      font-size: 2.857em;
@@ -222,9 +226,7 @@
       height: 70px;
     }
 
-    div.item {
 
-    }
     p.display {
       color: firebrick;
       text-align: center;
@@ -252,12 +254,12 @@
       padding-top: 15px;
 
     }
-    p.usage {
+    /*p.usage {
       font-size: 1em;
       color: grey;
       text-align: center;
       width: 200px;
-    }
+    }*/
 
     div.video {
       background-repeat: no-repeat;
@@ -274,13 +276,13 @@
 
     }
 
-    p.vid {
+    /*p.vid {
       color: grey;
       text-align: center;
       width: 200px;
       font-size: 1em;
 
-    }
+    }*/
 
 
     div.background {
@@ -297,13 +299,13 @@
       padding-top: 15px;
     }
 
-    p.background {
+    /*p.background {
       color: grey;
       text-align: center;
       width: 200px;
       font-size: 1em;
 
-    }
+    }*/
 
     div.circle2 {
       background-image: url("img7/k3.png");
@@ -393,9 +395,19 @@
       height: 50px;
       /*margin-top: 40px*/
     }
-    div.science {
+    /*div.science {
       width: 50%;
-    }
+    }*/
+
+    @media only screen and (max-width: 759px) {
+    .science {
+        width: auto;
+    }}
+
+    @media only screen and (max-width: 1000px) {
+    .science {
+        width: auto;
+    }}
 
     div.expertise {
       background-image: url("img7/6_AdScience_Agency_Expertise.svg");
@@ -438,8 +450,12 @@
       color: #5f5c5c;
       text-align: center;
       font-size: 1em;
-
     }
+
+    @media only screen and (max-width: 1000px) {
+    .retargeted {
+        width: auto;
+    }}
 
     div.gallery3 {
       display: flex;
@@ -451,9 +467,14 @@
       height: 50px;
     }
 
-    div.personal {
+    /*div.personal {
       width: 40%;
-    }
+    }*/
+
+    @media only screen and (max-width: 1000px) {
+    .personal {
+        width: auto;
+    }}
 
     div.manager {
       background-image: url("img7/8_Personal_Manager.svg");
@@ -478,9 +499,13 @@
       height: 50px;
     }
 
-    div.high {
+    /*div.high {
       width: 40%;
-    }
+    }*/
+    @media only screen and (max-width: 1000px) {
+    .high {
+        width: auto;
+    }}
 
     div.quality {
       background-image: url("img7/9_High_quality_publishers.svg");
@@ -549,16 +574,17 @@
       color: #5f5c5c;
       text-align: center;
       font-size: 1em;
-
     }
+
 
     div.save div.ads {
       height: 55px;
     }
 
-    div.save {
-      width: 50%;
-    }
+    @media only screen and (max-width: 1000px) {
+    .save {
+        width: auto;
+    }}
 
     div.ads {
       background-image: url("img7/11_Save_Ads.svg");
@@ -614,9 +640,10 @@
       text-align: center;
     }
 
-    div.regular {
-      width: 40%;
-    }
+    @media only screen and (max-width: 1000px) {
+    .ad {
+        width: auto;
+    }}
 
     div.payments {
       background-image: url("img7/13_Regular_payments.svg");
@@ -634,18 +661,22 @@
       color: #5f5c5c;
       text-align: center;
       font-size: 1em;
-
-
     }
+
+    @media only screen and (max-width: 1000px) {
+    .regular {
+        width: auto;
+    }}
 
     div.personal2 div.manager2 {
       height: 50px;
       text-align: center;
     }
 
-    div.personal2 {
-      width: 40%;
-    }
+    @media only screen and (max-width: 1000px) {
+    .personal2 {
+        width: auto;
+    }}
 
     div.manager2 {
       background-image: url("img7/14_Personal Manager.svg");
@@ -672,6 +703,12 @@
     div.input {
       height: 500px;
       padding-bottom: 4%;
+    }
+
+    .last-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
 
     h6 {
@@ -826,7 +863,7 @@
 .for {
     height: auto;;
     /*margin-bottom: 200px;*/
-    padding-bottom: 100%;
+    /*padding-bottom: 100%;*/
     margin-top: 420px;
     margin-bottom: 200px;
 }}
@@ -835,9 +872,36 @@
 .agency {
     height: auto;;
     margin-top: 40%;
-    /*margin-bottom: 200px;*/
     padding-bottom: 600px;
 }}
+
+@media only screen and (max-width: 759px) {
+.pay p {
+    width: auto;
+}}
+
+
+
+@media only screen and (max-width: 759px) {
+.science p {
+    width: auto;
+}}
+
+@media only screen and (max-width: 759px) {
+.targeted  {
+    width: auto;
+}}
+
+@media only screen and (max-width: 759px) {
+.personal p {
+    width: auto;
+}}
+
+
+
+
+
+
 
 @media only screen and (min-width: 1000px) {
 .for {
@@ -859,7 +923,15 @@
   .gallery p {
       font-size: 0.9em;
       font-weight: 300;
+      margin: 0 auto;
 
+    }
+  }
+
+  @media only screen and (max-width : 759px) {
+  .gallery2 p {
+      font-size: 0.9em;
+      font-weight: 3000;
     }
   }
 
@@ -935,6 +1007,7 @@
             </div>
           </div>
           <div class="section">
+            <div class="container2">
             <div class="formats">
               <div>
         <!-- <div class="circle">  </div> -->
@@ -964,7 +1037,7 @@
           <p class="mobile">
             Mobile
             </p>
-            <p class="usage">
+            <p class="disad">
               With the rise of mobile usage,
               this type of ads show high
               perfomance amd can be placed
@@ -977,7 +1050,7 @@
           <p class="video">
             Video
           </p>
-          <p class="vid">
+          <p class="disad">
             Video ads provide high level
             of user engagement since they
             are shown before the video user
@@ -991,7 +1064,7 @@
           <p class="site">
             Site Background
           </p>
-          <p class="background">
+          <p class="disad">
             A skin ad apeears in the background
             and is clickable. Background ad
             has the highest performance
@@ -1004,6 +1077,8 @@
       <div class="circle4"></div> -->
     </div>
   </div>
+</div>
+
 
   </div>
 
@@ -1149,7 +1224,7 @@
 
 
 
-    <div class="section">
+    <div class="section last-section">
 
     <div class="input">
       <h6>Once you try working<br>
